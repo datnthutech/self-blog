@@ -9,4 +9,12 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Models\Post\" />
+    <None Remove="Models\Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Post\" />
+    <Folder Include="Models\Enum\" />
+  </ItemGroup>
 </Project>
